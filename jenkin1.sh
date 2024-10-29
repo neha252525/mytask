@@ -4,7 +4,7 @@ echo "Enter first no"
 read  x
 echo "Enter second no"
 read y
-echo "what do you want to do ? a for add ,s for subs , m for multi"   
+echo "what do you want to do ? a for add ,s for subs , m for multi ,d for div"   
 read z
 
 if [ $z == "a" ];
@@ -20,6 +20,11 @@ then
 
 fi
  
+if [ $z == "d" ];
+then
+  echo $((x/y))
+
+fi
 
 if  [ $z == "m" ];
 then
